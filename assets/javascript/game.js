@@ -5,9 +5,6 @@ $(window).load(function() {
  var giphsArray = ["cats","dogs","dragons"];
 
 
-
-
-
 /*FUNCTIONS ----------------------------*/
 
 /*dynamically creates buttons for each value of giphsArray*/
@@ -45,17 +42,13 @@ displayGiphsInfo = function() {
         	for( var i=0; i < response.data.length ; i++ ) {
 
         	var giphDiv = $("<div class='giphDiv'>")
-
         	var giphDisplay = response.data[i].images.fixed_height_still.url;
-
         	var giphStateStill = response.data[i].images.fixed_height_still.url;
         	var giphStateAnimate = response.data[i].images.fixed_height.url;
 
         	var giph1 = $("<img class='giphImg' data-animate=" + giphStateAnimate + " data-still=" + giphStateStill + " data-state='still'>")
         	.attr("src", giphDisplay);
-        	
-
-
+       
 
         	giphDiv.append(giph1);
 
@@ -63,12 +56,8 @@ displayGiphsInfo = function() {
         	console.log("append worked!");
 
         	}
-
         }); 
-
 }
-
-
 
 /*MAIN PROCESSES ----------------------------*/
 
@@ -83,7 +72,6 @@ $("#add-giph").on("click", function(event) {
 	giphsArray.push(newGiph);
 
 	renderedButtons();
-
 });
 
 /*toggles the gifs between being still and animated*/
@@ -104,10 +92,7 @@ $(document).on("click", ".giphImg", function() {
 		}	
 });
 
-
  $(document).on("click", ".giphs-class", displayGiphsInfo);
-
-
 
 renderedButtons();
 });

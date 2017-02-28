@@ -8,7 +8,6 @@ h1 {
 	background-image: url("http://www.shockingscience.com/wp-content/uploads/sites/879/2015/08/strange-unexplained-things-that.jpg");
 	color: white;
 	font-family: 'Fontdiner Swanky', cursive;
-	border: 4px solid #ffffff;
 }
 
 .container-fluid {
@@ -30,7 +29,7 @@ h1 {
 
 .formClass {
 	width: 270px;
-	border: 4px solid #4d4dff;
+	border: 4px solid #0047b3;
 	padding: 15px;
 	background-color: white;
 	color: black;
@@ -50,7 +49,7 @@ h1 {
 }
 
 #giph-view {
-	height: 600px;
+	height: 610px;
 	/* opacity: 0.8; */
 
 }
